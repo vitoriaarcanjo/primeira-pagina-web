@@ -9,64 +9,98 @@
 <body>
 
 <header>
-    <h1>Sobre Nós</h1>
-    <img src="https://picsum.photos/id/328/800/200" alt="Nossa Equipe" width="800" height="200">
+<h1>Sobre Nós</h1>
+<img src="https://picsum.photos/id/328/800/200" alt="Nossa Equipe" width="800" height="200">
 </header>
 
-<nav>
-    <a href="index.html">Início</a> |
-    <a href="sobre-nos.html">Sobre Nós</a> |
-    <a href="servicos.html">Serviços</a> |
-    <a href="catalogo.html">Catálogo</a> |
-    <a href="produtos.html">Produtos</a> |
-    <a href="parceiros.html">Parceiros</a> |
-    <a href="portfolio.html">Portfólio</a> |
-    <a href="contate-nos.html">Contato</a> |
-    <a href="duvidas.html">Dúvidas</a> |
-    <a href="ouvidoria.html">Ouvidoria</a>
+<!-- ✅ MENU DROP-DOWN -->
+<nav class="menu-principal">
+    <div class="menu-dropdown">
+        <span class="botao-menu">☰ MENU</span>
+        <div class="lista-links">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="parceiros.html">Parceiros</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contate-nos.html">Contato</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="ouvidoria.html">Ouvidoria</a>
+        </div>
+    </div>
 </nav>
 
-<div class="conteudo">
-    <aside>
-        <h3>Menu Lateral</h3>
-        <a href="index.html">Página Inicial</a>
-        <a href="sobre-nos.html">Sobre Nós</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="parceiros.html">Parceiros</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contate-nos.html">Contato</a>
-        
-        
-    </aside>
 
-    <main>
-        <section>
-            <h2>Quem Somos</h2>
-            <p>Somos uma equipe apaixonada por tecnologia, com mais de 5 anos de experiência criando soluções digitais para empresas de todos os portes.</p>
-            <img src="https://picsum.photos/id/325/400/250" alt="Nosso Escritório" width="400" height="250">
-        </section>
 
-        <section>
-            <h2>Nossa Missão</h2>
-            <p>Entregar qualidade e inovação em cada projeto.<br>
-            Garantir a satisfação total dos nossos clientes.<br>
-            Contribuir para o crescimento dos negócios através da tecnologia.</p>
-        </section>
+<div class="conteudo-wrapper"> <!-- ✅ Novo contêiner para centralizar tudo -->
+  <!-- ✅ ASIDE FIXO COM ANÚNCIOS -->
+  <aside id="lateral-fixo">
+  <h2>ANÚNCIOS</h2>
+  <div class="grupo-imagens">
 
-        <section>
-            <h3>Nossos Valores</h3>
-            <p>✅ Compromisso com resultados.<br>
-            ✅ Transparência em todas as etapas.<br>
-            ✅ Respeito e dedicação ao cliente.</p>
-            <img src="https://picsum.photos/id/1067/400/250" alt="Nossos Valores" width="400" height="250">
-        </section>
-    </main>
+  <input type="checkbox" id="img1">
+  <label for="img1">
+  <img src="https://picsum.photos/id/0/210/120" alt="Criação de Sites">
+  </label>
+
+  <input type="checkbox" id="img2">
+  <label for="img2">
+  <img src="https://picsum.photos/id/26/210/120" alt="Loja Virtual">
+  </label>
+
+  <input type="checkbox" id="img3">
+  <label for="img3">
+  <img src="https://picsum.photos/id/416/210/120" alt="Manutenção">
+  </label>
+
+  <input type="checkbox" id="img4">
+  <label for="img4">
+  <img src="https://picsum.photos/id/1067/210/120" alt="Consultoria">
+  </label>
+
+  <input type="checkbox" id="img5">
+  <label for="img5">
+  <img src="https://picsum.photos/id/180/210/120" alt="Design Responsivo">
+  </label>
+
+  <input type="checkbox" id="img6">
+  <label for="img6">
+  <img src="https://picsum.photos/id/42/210/120" alt="Hospedagem">
+  </label>
+
+  <a href="sobre.html" class="mostrar-todas">↩ MOSTRAR TODAS</a>
+
+  </div>
+  </aside>
+
+  <main>
+  <section>
+  <h2>Quem Somos</h2>
+  <p>Somos uma equipe apaixonada por tecnologia, com mais de 5 anos de experiência criando soluções digitais para empresas de todos os portes.</p>
+  <img src="https://picsum.photos/id/325/400/250" alt="Nosso Escritório" width="400" height="250">
+  </section>
+
+  <section>
+  <h2>Nossa Missão</h2>
+  <p>Entregar qualidade e inovação em cada projeto.<br>
+              Garantir a satisfação total dos nossos clientes.<br>
+              Contribuir para o crescimento dos nossos negócios através da tecnologia.</p>
+  </section>
+
+  <section>
+  <h3>Nossos Valores</h3>
+  <p>✅ Compromisso com resultados.<br>
+              ✅ Transparência em todas as etapas.<br>
+              ✅ Respeito e dedicação ao cliente.</p>
+  <img src="https://picsum.photos/id/1067/400/250" alt="Nossos Valores" width="400" height="250">
+  </section>
+  </main>
 </div>
 
 <footer>
-    <p><a href="index.html">← Voltar para a Página Inicial</a></p>
+<p><a href="index.html">← Voltar para a Página Inicial</a></p>
 </footer>
 
 </body>

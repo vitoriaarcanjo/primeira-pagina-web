@@ -9,69 +9,104 @@
 <body>
 
 <header>
-    <h1>Ouvidoria</h1>
-    <img src="https://picsum.photos/id/42/800/180" alt="Ouvidoria" width="800" height="180">
+<h1>Ouvidoria</h1>
+<img src="https://picsum.photos/id/42/800/180" alt="Ouvidoria" width="800" height="180">
 </header>
 
-<nav>
-    <a href="index.html">Início</a> |
-    <a href="sobre.html">Sobre Nós</a> |
-    <a href="produtos.html">Produtos</a> |
-    <a href="servicos.html">Serviços</a> |
-    <a href="catalogo.html">Catálogo</a> |
-    <a href="parceiros.html">Parceiros</a> |
-    <a href="portfolio.html">Portfólio</a> |
-    <a href="contate-nos.html">Contato</a> |
-    <a href="duvidas.html">Dúvidas</a> |
-    <a href="ouvidoria.html">Ouvidoria</a>
+<!-- ✅ MENU DROP-DOWN -->
+<nav class="menu-principal">
+    <div class="menu-dropdown">
+        <span class="botao-menu">☰ MENU</span>
+        <div class="lista-links">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>S
+            <a href="catalogo.html">Catálogo</a>
+            <a href="parceiros.html">Parceiros</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contate-nos.html">Contato</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="ouvidoria.html">Ouvidoria</a>
+        </div>
+    </div>
 </nav>
 
 <div class="conteudo">
-    <aside>
-        <h3>Menu Lateral</h3>
-        <a href="index.html">Página Inicial</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="parceiros.html">Parceiros</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contate-nos.html">Contato</a>
-        
-        
-    </aside>
 
-    <main>
-        <section>
-            <form>
-                <p class="form-ouvidoria">Seu nome (opcional):<br>
-                <input type="text" name="nome" class="campo-ouvidoria"></p>
+<!-- ✅ ASIDE FIXO COM ANÚNCIOS -->
+<aside id="lateral-fixo">
+    <h2>ANÚNCIOS</h2>
+    <div class="grupo-imagens">
 
-                <p class="form-ouvidoria">Assunto:<br>
-                <input type="text" name="assunto" class="campo-ouvidoria"></p>
+        <input type="checkbox" id="img1">
+        <label for="img1">
+            <img src="https://picsum.photos/id/0/210/120" alt="Criação de Sites">
+        </label>
 
-                <p class="form-ouvidoria">Tipo de manifestação:<br>
-                <label class="opcao-radio"><input type="radio" name="tipo" value="elogio"> Elogio</label><br>
-                <label class="opcao-radio"><input type="radio" name="tipo" value="reclamacao"> Reclamação</label><br>
-                <label class="opcao-radio"><input type="radio" name="tipo" value="sugestao"> Sugestão</label><br>
-                <label class="opcao-radio"><input type="radio" name="tipo" value="denuncia"> Denúncia</label>
-                </p>
+        <input type="checkbox" id="img2">
+        <label for="img2">
+            <img src="https://picsum.photos/id/26/210/120" alt="Loja Virtual">
+        </label>
 
-                <p class="form-ouvidoria">Descreva aqui:<br>
-                <textarea name="texto" rows="6" cols="50" required class="texto-ouvidoria"></textarea></p>
+        <input type="checkbox" id="img3">
+        <label for="img3">
+            <img src="https://picsum.photos/id/416/210/120" alt="Manutenção">
+        </label>
 
-                <p class="form-ouvidoria">Deseja resposta? <input type="checkbox" name="resposta" class="checkbox-ouvidoria"></p>
+        <input type="checkbox" id="img4">
+        <label for="img4">
+            <img src="https://picsum.photos/id/1067/210/120" alt="Consultoria">
+        </label>
 
-                <p class="btn-envio"><input type="submit" value="Enviar"></p>
-            </form>
-        </section>
+        <input type="checkbox" id="img5">
+        <label for="img5">
+            <img src="https://picsum.photos/id/180/210/120" alt="Design Responsivo">
+        </label>
 
-        <p class="link-voltar-contato"><a href="contate-nos.html">← Voltar para Contato</a></p>
-    </main>
+        <input type="checkbox" id="img6">
+        <label for="img6">
+            <img src="https://picsum.photos/id/42/210/120" alt="Hospedagem">
+        </label>
+
+        <a href="ouvidoria.html" class="mostrar-todas">↩ MOSTRAR TODAS</a>
+
+    </div>
+</aside>
+
+<!-- ✅ CONTEÚDO PRINCIPAL -->
+<main>
+<section>
+<form>
+<p class="form-ouvidoria">Seu nome (opcional):<br>
+<input type="text" name="nome" class="campo-ouvidoria"></p>
+
+<p class="form-ouvidoria">Assunto:<br>
+<input type="text" name="assunto" class="campo-ouvidoria"></p>
+
+<p class="form-ouvidoria">Tipo de manifestação:<br>
+<label class="opcao-radio"><input type="radio" name="tipo" value="elogio"> Elogio</label><br>
+<label class="opcao-radio"><input type="radio" name="tipo" value="reclamacao"> Reclamação</label><br>
+<label class="opcao-radio"><input type="radio" name="tipo" value="sugestao"> Sugestão</label><br>
+<label class="opcao-radio"><input type="radio" name="tipo" value="denuncia"> Denúncia</label>
+</p>
+
+<p class="form-ouvidoria">Descreva aqui:<br>
+<textarea name="texto" rows="6" cols="50" required class="texto-ouvidoria"></textarea></p>
+
+<p class="form-ouvidoria">Deseja resposta? <input type="checkbox" name="resposta" class="checkbox-ouvidoria"></p>
+
+<p class="btn-envio"><input type="submit" value="Enviar"></p>
+</form>
+</section>
+
+<p class="link-voltar-contato"><a href="contate-nos.html">← Voltar para Contato</a></p>
+</main>
+
 </div>
 
 <footer>
-    <p><a href="index.html">← Voltar para a Página Inicial</a></p>
+<p><a href="index.html">← Voltar para a Página Inicial</a></p>
 </footer>
 
 </body>
